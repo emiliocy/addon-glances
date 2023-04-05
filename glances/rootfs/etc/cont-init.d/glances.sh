@@ -35,7 +35,7 @@ if bashio::config.true 'influxdb.enabled'; then
         } >> /etc/glances.conf
     elif bashio::config.equals 'influxdb.version' '2'; then
         {
-            echo "[influxdb 2]"
+            echo "[influxdb2]"
             echo "org=$(bashio::config 'influxdb.org')"
             echo "bucket=$(bashio::config 'influxdb.bucket')"
             echo "token=$(bashio::config 'influxdb.token')"
